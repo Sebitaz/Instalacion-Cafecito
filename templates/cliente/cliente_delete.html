@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="modal-dialog modal-lg">
     <div class="modal-content">
         <div class="modal-header">
@@ -32,3 +33,15 @@
         </div>
     </div>
 </div>
+=======
+{% extends 'base/base.html' %}
+
+{% block content %}
+<form method='post'>
+    {% csrf_token %}
+    <h3>¿Desea eliminar el registro de {{object.nombre}}?</h3>
+    <button class="btn btn-danger" type="submit" class="btn btn-primary";>Si, eliminar</button>
+    <a class="btn btn-default" href="{% url 'cliente_listar' %}">Cancelar</a>
+</form>
+{% endblock %}
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b

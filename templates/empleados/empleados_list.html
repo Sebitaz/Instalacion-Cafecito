@@ -1,6 +1,7 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
+<<<<<<< HEAD
 <div class="container">
     <div class="row">
         <div class="col-6 ml-auto">
@@ -16,6 +17,13 @@
 
 <p></p>
 <table class='table table-striped'>
+=======
+<h1>Empleados</h1>
+<p></p>
+<a href="{%url 'empleados_crear'%}" class="btn btn-primary btn-circle"><i class="fa fa-plus-square"></i></button></a>
+<p></p>
+<table class='table table-bordered'>
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
     <thead>
         <tr>
             <td>#</td>
@@ -30,15 +38,25 @@
         {% if object_list%}
         {% for empleados in object_list%}
         <tr>
+<<<<<<< HEAD
             <td>{{empleados.id}}</td>
             <td>{{empleados.nombre}}</td>
+=======
+            <td>{{empleados.id}}.</td>
+            <td>{{empleados.nombre}}.</td>
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
             <td>{{empleados.apellidos}}</td>
             <td>{{empleados.telefono}}</td>
             <td>{{empleados.estado|yesno:"Activo, Inactivo"}}</td>
             <td>
+<<<<<<< HEAD
                 <a class="btn btn-warning btn-circle" onclick="return abrir_modal('{% url 'empleados_editar' empleados.id %}')" href="#" role="button"><i class="far fa-edit"></i></a>
-                <a class="btn btn-danger btn-circle" onclick="return abrir_modal('{% url 'empleados_eliminar' empleados.id %}')" href="#" role="button"><i class="far fa-trash-alt" style="color:white"></i></a>
-                <a class="btn btn-danger btn-circle" onclick="return abrir_modal('{% url 'empleados_inactivar' empleados.id %}')" href="#" role="button" style="color:white"></a>
+                {% comment %} <a class="btn btn-danger btn-circle" onclick="return abrir_modal('{% url 'empleados_eliminar' empleados.id %}')" href="#" role="button"><i class="far fa-trash-alt" style="color:white"></i></a> {% endcomment %}
+                <a class="btn btn-danger btn-circle" onclick="return abrir_modal('{% url 'empleados_inactivar' empleados.id %}')" href="#" role="button" style="color:white"><i class="fas fa-power-off"></i></a>
+=======
+                <a class="btn btn-warning btn-circle" href="{% url 'empleados_editar' empleados.id %}" role="button"><i class="far fa-edit"></i></a>
+                <a class="btn btn-danger btn-circle" href="{% url 'empleados_eliminar' empleados.id %}" role="button"><i class="far fa-trash-alt"></i></a>
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
             </td>
         </tr>
         {% endfor %}
@@ -48,7 +66,11 @@
     <tbody>
 </table>
 
+<<<<<<< HEAD
+{% comment %} <br>
+=======
 <br>
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
 <div class="pagination">
     <span class="step-links">
             {% if page_obj.has_previous %}
@@ -63,7 +85,8 @@
         <a href="?page={{ page_obj.paginator.num_pages}}">Último &raquo;</a>
         {% endif %}
     </span>
-</div>
+<<<<<<< HEAD
+</div> {% endcomment %}
 
 {% endblock %}
 
@@ -74,4 +97,8 @@
         $('.table').DataTable();
     });
 </script>
+=======
+</div>
+
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
 {% endblock %}

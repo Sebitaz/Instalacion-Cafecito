@@ -1,6 +1,7 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
+<<<<<<< HEAD
 <div class="container">
     <div class="row">
         <div class="col-6 ml-auto">
@@ -14,6 +15,12 @@
     </div>
 </div>
 <table class='table table-striped'>
+=======
+<h1>Clientes</h1>
+<p></p>
+<a href={% url 'cliente_crear' %}><button type="submit" class="btn btn-primary btn-circle"><i class="fa fa-plus-square"></i></button></a>
+<table class='table table-bordered'>
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
     <thead>
         <tr>
             <td>#</td>
@@ -37,9 +44,14 @@
             <td>{{ client.direccion }}</td>
             <td>{{ client.estado|yesno:"Activo, Inactivo" }}</td>
             <td>
+<<<<<<< HEAD
                 <a class="btn btn-warning btn-circle" onclick="return abrir_modal('{% url 'cliente_editar' client.id %}')" href="#" role="button"><i class="far fa-edit"></i></a>
-                <a class="btn btn-danger btn-circle" onclick="return abrir_modal('{% url 'cliente_inactivar' client.id %}')" href="#" role="button" style="color:white"></a>
+                <a class="btn btn-danger btn-circle" onclick="return abrir_modal('{% url 'cliente_inactivar' client.id %}')" href="#" role="button" style="color:white"><i class="fas fa-power-off"></i></a>
                 {% comment %} <a class="btn btn-warning btn-circle" href="{% url 'cliente_inactivar' client.id %}"  role="button" style="color:white"></a> {% endcomment %}
+=======
+                <a class="btn btn-warning btn-circle" href="{% url 'cliente_editar' client.id %}" role="button"><i class="far fa-edit"></i></a>
+                <a class="btn btn-danger btn-circle" href="{% url 'cliente_eliminar' client.id %}" role="button"><i class="far fa-trash-alt"></i></a>
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
             </td>
         </tr>
         {% endfor %}
@@ -49,7 +61,11 @@
     </tbody>
 </table>
 <br>
+<<<<<<< HEAD
 {% comment %} <div class="pagination">
+=======
+<div class="pagination">
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
     <span class="step-links">
             {% if page_obj.has_previous %}
             <a href="?page=1">&laquo; Primero</a>
@@ -63,11 +79,16 @@
         <a href="?page={{ page_obj.paginator.num_pages}}">Último &raquo;</a>
         {% endif %}
     </span>
+<<<<<<< HEAD
 </div> {% endcomment %}
+=======
+</div>
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
 
 
 {% endblock %}
 
+<<<<<<< HEAD
 {% block js_page %}
 <script>
     //Llamamos al plugin del datatable
@@ -76,3 +97,6 @@
     });
 </script>
 {% endblock %}
+=======
+<button type="button" class="btn btn-success btn-circle" onclick="return cerrar_modal()"><i class="fa fa-undo"></i></button> 
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b

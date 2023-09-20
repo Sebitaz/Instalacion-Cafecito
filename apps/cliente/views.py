@@ -4,10 +4,17 @@ from apps.cliente.form import ClienteForm
 from apps.cliente.form import Cliente
 from django.views.generic import CreateView, ListView, UpdateView, DeleteView
 from django.urls import reverse_lazy
+<<<<<<< HEAD
 import json
 # Create your views here.
 def client(request):
     return render(request, 'venta/index.html')
+=======
+
+# Create your views here.
+def client(request):
+    return render(request, 'cliente/index.html')
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
     #return render(request, 'cliente/cliente_form.html')
 
 def cliente_view(request):
@@ -72,6 +79,7 @@ class ClienteList(ListView):
     model=Cliente
     template_name='cliente/cliente_list.html'
     context_object_name='obj'
+<<<<<<< HEAD
     paginate_by= 4
 
 def ClienteInactivar(request, id):
@@ -92,3 +100,6 @@ def ClienteInactivar(request, id):
         return HttpResponse("Cliente Inactivado")
 
     return render(request, template_name, contexto)
+=======
+    paginate_by=2
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b

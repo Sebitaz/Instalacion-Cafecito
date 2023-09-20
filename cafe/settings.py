@@ -48,6 +48,10 @@ INSTALLED_APPS = [
     'apps.bases',
     'apps.auten',
     'apps.Productos',
+<<<<<<< HEAD
+    'apps.cmp',
+=======
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
 ]
 
 MIDDLEWARE = [
@@ -87,7 +91,11 @@ WSGI_APPLICATION = 'cafe.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
+<<<<<<< HEAD
+        'NAME': 'bdcompras5',
+=======
         'NAME': 'bdcompras2',
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
         'USER': 'root',
         'PASSWORD':'',
         'HOST': 'localhost',
@@ -140,7 +148,11 @@ STATIC_URL='/static/'
 STATICFILES_DIRS=(os.path.join(BASE_DIR,'static'),)
 
 # CONFIGURACION DE INICIO Y CIERRE DE SESION 
+<<<<<<< HEAD
+LOGIN_REDIRECT_URL=reverse_lazy("cliente_listar") 
+=======
 LOGIN_REDIRECT_URL=reverse_lazy("venta_listar") 
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
 LOGOUT_REDIRECT_URL= reverse_lazy('login')
 
 # CONFIGURACION DE EMAIL

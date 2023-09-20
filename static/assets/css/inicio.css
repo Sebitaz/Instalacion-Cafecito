@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     font-family: 'Poppins', sans-serif;
 }
@@ -9,6 +10,15 @@
 
 .F {
     background-color: #a67b40;
+=======
+.title h1 {
+    text-align: center;
+    color: white;
+}
+
+.F {
+    background-color: white;
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
     margin: auto;
     text-align: center;
     padding: 8px 0px;
@@ -16,6 +26,7 @@
     border-radius: 4px;
 }
 
+<<<<<<< HEAD
 ::placeholder {
     color: rgb(255, 255, 255);
 }
@@ -25,6 +36,12 @@
     width: 85%;
     font-size: 16px;
     color: #ffffff;
+=======
+.register {
+    width: 85%;
+    font-size: 16px;
+    color: #000000;
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
     margin-bottom: 10px;
     border: none;
     border-bottom: 1px solid #000000;
@@ -33,10 +50,16 @@
 }
 
 .password {
+<<<<<<< HEAD
     background-color: #a67b40;
     width: 85%;
     font-size: 16px;
     color: #ffffff;
+=======
+    width: 85%;
+    font-size: 16px;
+    color: #000000;
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
     margin-bottom: 40px;
     border: none;
     border-bottom: 1px solid #000000;
@@ -44,6 +67,7 @@
     background: transparent;
 }
 
+<<<<<<< HEAD
 
 /* .access button {
     width: 25.5rem;
@@ -55,10 +79,23 @@
 .register {
     text-decoration: none;
     color: rgb(255, 255, 255);
+=======
+.access button {
+    width: 25.5rem;
+    color: white;
+    background-color: rgb(255, 217, 0);
+    border: none;
+}
+
+.register {
+    text-decoration: none;
+    color: black;
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
     margin-right: 150px;
 }
 
 .lost {
+<<<<<<< HEAD
     padding: 0px 40px;
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -70,6 +107,11 @@
 
 .btn.btn-primary:hover {
     background-color: rgb(255, 5, 180);
+=======
+    padding: 0px 45px;
+    text-decoration: none;
+    color: black;
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
 }
 
 .x {
@@ -85,6 +127,7 @@
 .L {
     text-decoration: none;
     color: white;
+<<<<<<< HEAD
 }
 
 .access button {
@@ -101,4 +144,6 @@
 .access button:hover {
     background-color: #c9a26e !important;
     /* Cambia el color en hover */
+=======
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
 }

@@ -9,7 +9,11 @@ from apps.empleados.form import empleadosForm
 from apps.empleados.form import empleados
 # Create your views here.
 def index(request):
+<<<<<<< HEAD
     return render (request, 'venta/index.html')
+=======
+    return render (request, 'empleados/index.html')
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
     #  return render(request, 'empleados/empleados_form.html')
 # def empleados_view(request):
 #     if request.method =='POST':
@@ -52,13 +56,19 @@ class empleadosCreate(CreateView):
 class EmpleadosUpdate (UpdateView):
     model = empleados
     form_class=empleadosForm
+<<<<<<< HEAD
     context_object_name='obj'
+=======
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
     template_name='empleados/empleados_form.html'
     success_url=reverse_lazy('empleados_listar')
 
 class empleadosdelete(DeleteView):
     model=empleados
+<<<<<<< HEAD
     context_object_name='obj'
+=======
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
     template_name='empleados/empleados_delete.html'
     success_url=reverse_lazy('empleados_listar')
 
@@ -95,6 +105,7 @@ class empleadosdelete(DeleteView):
 
 class empleadosList(ListView):
     model=empleados
+<<<<<<< HEAD
     context_object_name='obj'
     template_name='empleados/empleados_list.html'
     paginate_by=10
@@ -117,3 +128,7 @@ def EmpleadoInactivar(request, id):
         return HttpResponse("Empleado Inactivado")
 
     return render(request, template_name, contexto)
+=======
+    template_name='empleados/empleados_list.html'
+    paginate_by=3
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b

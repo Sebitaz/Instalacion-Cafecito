@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="modal-dialog modal-lg">
     <div class="modal-content">
         <div class="modal-header">
@@ -32,3 +33,18 @@
         </div>
     </div>
 </div>
+=======
+
+{% extends 'base/base.html' %} 
+{% block content %}
+<form method='post'>
+    {%  csrf_token %}
+    <h3>Desea eliminar el registro de{{ventas.id}}?<h3/>
+    <button class="btn btn-danger" typer="submit" class="btn btn-primary";>si, eliminar</button>
+    <a class="btn btn-default" href="{%url 'venta_listar'%}">cancelar</a>
+</form>
+
+
+
+{% endblock %}
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b

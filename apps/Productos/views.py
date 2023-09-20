@@ -12,7 +12,11 @@ from apps.Productos.forms import Productos
 
 # Create your views here.
 def index(request):
+<<<<<<< HEAD
     return render (request, 'venta/index.html')
+=======
+    return render (request, 'compra/index.html')
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
 #     return render(request, 'Productos/Productos_form.html')
 # def Productos_views(request):
 #     if request.method =='POST':
@@ -27,25 +31,37 @@ def index(request):
 class ProductosCreate(CreateView):
     model=Productos
     form_class=Productosform
+<<<<<<< HEAD
     context_object_name='obj'
+=======
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
     template_name='Productos/Productos_form.html'
     success_url=reverse_lazy('Productos_listar')
 
 class ProductosList(ListView):
     model=Productos
+<<<<<<< HEAD
     context_object_name='obj'
     template_name='Productos/Productos_list.html'
     paginate_by = 10
+=======
+    template_name='Productos/Productos_list.html'
+    paginate_by = 4
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
 
 class ProductosEdit(UpdateView):
     model=Productos
     form_class=Productosform
+<<<<<<< HEAD
     context_object_name='obj'
+=======
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
     template_name='Productos/Productos_form.html'
     success_url=reverse_lazy('Productos_listar')
 
 class ProductosDelete(DeleteView):
     model=Productos
+<<<<<<< HEAD
     context_object_name='obj'
     template_name='Productos/Productos_delete.html'
     success_url=reverse_lazy('Productos_listar')
@@ -68,3 +84,7 @@ def ProductosInactivar(request, id):
         return HttpResponse("Producto Inactivado")
 
     return render(request, template_name, contexto)
+=======
+    template_name='Productos/Productos_delete.html'
+    success_url=reverse_lazy('Productos_listar')
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b

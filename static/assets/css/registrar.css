@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     font-family: 'Poppins', sans-serif;
 }
@@ -9,6 +10,15 @@
 
 .F {
     background-color: #a67b40;
+=======
+.title h1 {
+    text-align: center;
+    color: white;
+}
+
+.F {
+    background-color: rgb(255, 255, 255);
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
     margin: auto;
     text-align: center;
     padding: 10px 0px;
@@ -16,6 +26,7 @@
     border-radius: 4px;
 }
 
+<<<<<<< HEAD
 ::placeholder {
     color: rgb(255, 255, 255);
 }
@@ -24,6 +35,12 @@
     width: 85%;
     font-size: 16px;
     color: #ffffff;
+=======
+.email {
+    width: 85%;
+    font-size: 16px;
+    color: #000000;
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
     margin-bottom: 10px;
     border: none;
     border-bottom: 1px solid #000000;
@@ -33,6 +50,7 @@
 
 .access button {
     width: 25.5rem;
+<<<<<<< HEAD
     height: 3rem;
     color: white;
     background-color: #53320e;
@@ -45,6 +63,11 @@
 .access button:hover {
     background-color: #c9a26e !important;
     /* Cambia el color en hover */
+=======
+    color: white;
+    background-color: rgb(255, 217, 0);
+    border: none;
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
 }
 
 .x {

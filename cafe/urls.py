@@ -15,7 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import include, re_path
+from django.urls import include, re_path, path
 from django.contrib.auth.views import LoginView, logout_then_login
 from apps.venta.views import index
 from django.contrib.auth.decorators import login_required
@@ -32,6 +32,10 @@ urlpatterns = [
     re_path(r'cliente/', include('apps.cliente.urls')),
     re_path(r'Productos/', include('apps.Productos.urls')),
     re_path(r'inv/', include(('apps.inv.urls', 'inv'), namespace='inv')),
+<<<<<<< HEAD
+    re_path(r'cmp/', include(('apps.cmp.urls', 'cmp'), namespace='cmp')),
+=======
+>>>>>>> b0ee205593e0976a99ff5a8437a349abae8f006b
     re_path(r'^accounts/login/', LoginView.as_view(template_name="usuario/index.html"),name="login"),
     re_path(r'^logout/', logout_then_login, name='logout'),
     re_path(r'reset_password/', auth_views.PasswordResetView.as_view(template_name="auten/password-reset.html"), name='password_reset'),
